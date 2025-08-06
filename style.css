@@ -1,0 +1,85 @@
+:root {
+  --bg-dark: #1e1e1e;
+  --text-dark: #ffffff;
+  --bg-light: #ffffff;
+  --text-light: #222222;
+
+  --project-border: #4a90e2;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project {
+  background: var(--bg-light);
+  color: var(--text-light);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--project-border);
+}
+
+body.dark .project {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+.intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.intro .links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: bold;
+
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
+
+body.dark footer {
+  background: #2c2c2c;
+}
+
